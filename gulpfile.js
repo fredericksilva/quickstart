@@ -40,6 +40,6 @@ gulp.task('clean', function(cb) {
 gulp.task('default', function(cb) {
   runSequence('clean',
       'build:ng2',
-      'concat',
+      'build:shim',
       cb);
 });
